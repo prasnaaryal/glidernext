@@ -3,6 +3,7 @@ import Header from "@/layouts/header";
 import React from "react";
 import Banner from "./components/Banner";
 import EmailBox from "./components/EmailBox";
+import OurSeminars from "./components/OurSeminars";
 import OurServices from "./components/OurServices";
 import WhatWeDo from "./components/WhatWeDo";
 import WhoWeAre from "./components/WhoWeAre";
@@ -19,6 +20,7 @@ const index = () => {
         <EmailBox />
         <OurServices />
         <WhyChooseUs />
+        <OurSeminars/>
       </main>
       <Footer />
     </div>
