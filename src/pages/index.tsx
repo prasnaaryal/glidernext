@@ -6,6 +6,7 @@ import EmailBox from "./components/EmailBox";
 import OurServices from "./components/OurServices";
 import WhatWeDo from "./components/WhatWeDo";
 import WhoWeAre from "./components/WhoWeAre";
+import WhyChooseUs from "./components/WhyChooseUs";
 
 const index = () => {
   return (
@@ -15,8 +16,9 @@ const index = () => {
         <Banner />
         <WhatWeDo />
         <WhoWeAre />
-        <EmailBox/>
-        <OurServices/>
+        <EmailBox />
+        <OurServices />
+        <WhyChooseUs />
       </main>
       <Footer />
     </div>
