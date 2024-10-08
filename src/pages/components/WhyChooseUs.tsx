@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
         <Typography variant="h5" sx={{ fontWeight: "bold" ,color:"black"}}>
           WHY CHOOSE US
         </Typography>
-        <Typography variant="h4" sx={{ mt: 2, fontWeight: "medium",color:"black" }}>
+        <Typography variant="h6" sx={{ mt: 2, fontWeight: "medium",color:"black" }}>
           Guiding the Future of Healthcare
         </Typography>
       </Box>

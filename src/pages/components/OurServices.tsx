@@ -36,11 +36,11 @@ const Services = () => {
       <Box sx={{ m: 4 }}>
         <Typography
           variant="h5"
-          sx={{ color: "black", mb: 4, fontWeight: "bold" }}
+          sx={{ color: "black", mb: 2, fontWeight: "bold" }}
         >
           OUR SERVICES
         </Typography>
-        <Typography variant="h4" sx={{ mb: 4, color: "black" }}>
+        <Typography variant="h5" sx={{ mb: 4, color: "black" }}>
           Your Path to Success Starts Here
         </Typography>
 

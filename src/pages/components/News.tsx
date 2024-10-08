@@ -12,21 +12,21 @@ const articles = [
     description:
       "Lorem ipsum dolor sit amet consectetur. Quam pharetra urna at pulvinar blandit. Ullamcorper ullamcorper ac justo nisl est laoreet pharetra ultricies mauris...",
     postedDate: "18 August 2023",
-    image: Image5,  
+    image: Image5,
   },
   {
     title: "Nursing Education Unleashed: From Classroom to Clinicals",
     description:
       "Lorem ipsum dolor sit amet consectetur. Quam pharetra urna at pulvinar blandit. Ullamcorper ullamcorper ac justo nisl est laoreet pharetra ultricies mauris...",
     postedDate: "18 August 2023",
-    image: Image4,  
+    image: Image4,
   },
   {
     title: "Nurse's Notebook: A Journey through Nursing Education",
     description:
       "Lorem ipsum dolor sit amet consectetur. Quam pharetra urna at pulvinar blandit. Ullamcorper ullamcorper ac justo nisl est laoreet pharetra ultricies mauris...",
     postedDate: "18 August 2023",
-    image: Image6,  
+    image: Image6,
   },
 ];
 
@@ -35,10 +35,13 @@ const News = () => {
     <Box sx={{ maxWidth: "1200px", mx: "auto", py: 10 }}>
       {/* Header Section */}
       <Box sx={{ textAlign: "center", mb: 8 }}>
-        <Typography variant="h5" sx={{ fontWeight: "bold", mb: 2 }}>
+        <Typography
+          variant="h5"
+          sx={{ fontWeight: "bold", mb: 2, color: "black" }}
+        >
           News, Blogs, and Beyond
         </Typography>
-        <Typography variant="h6" sx={{ color: "text.secondary" }}>
+        <Typography variant="h6" sx={{ color: "black" }}>
           Your Source for Updates & Articles
         </Typography>
       </Box>
@@ -49,19 +52,34 @@ const News = () => {
           <Image
             src={New}
             alt="Featured Article"
-            style={{ borderRadius: "8px", objectFit: "cover", width: "100%", height: "auto" }}
+            style={{
+              borderRadius: "8px",
+              objectFit: "cover",
+              width: "100%",
+              height: "auto",
+            }}
           />
         </Grid>
 
         <Grid item xs={12} md={7}>
           <Box sx={{ py: 6 }}>
-            <Typography variant="h4" sx={{ fontWeight: "bold", mb: 4 }}>
+            <Typography
+              variant="h5"
+              sx={{ fontWeight: "bold", mb: 4, color: "black" }}
+            >
               Nurse Leadership: Paving the Way for Change in Healthcare
             </Typography>
-            <Typography variant="body1" sx={{ color: "text.secondary", mb: 4 }}>
-              Lorem ipsum dolor sit amet consectetur. Quam pharetra urna at pulvinar blandit. Ullamcorper ullamcorper ac justo nisl est laoreet pharetra ultricies mauris. Senectus aliquam sodales massa vitae velit. Cras ultricies ac ultricies pellentesque ligula amet ultricies. Tristique porttitor pulvinar id et pellentesque aliquam nunc. Egestas felis ultrices quam dui mollis cras. Id vestibulum urna amet morbi ornare. Dictum tristique elementum lobortis posuere diam tincidunt dui...
+            <Typography variant="body1" sx={{ mb: 4, color: "black" }}>
+              Lorem ipsum dolor sit amet consectetur. Quam pharetra urna at
+              pulvinar blandit. Ullamcorper ullamcorper ac justo nisl est
+              laoreet pharetra ultricies mauris. Senectus aliquam sodales massa
+              vitae velit. Cras ultricies ac ultricies pellentesque ligula amet
+              ultricies. Tristique porttitor pulvinar id et pellentesque aliquam
+              nunc. Egestas felis ultrices quam dui mollis cras. Id vestibulum
+              urna amet morbi ornare. Dictum tristique elementum lobortis
+              posuere diam tincidunt dui...
             </Typography>
-            <Typography variant="body2" sx={{ color: "teal" }}>
+            <Typography variant="body2" sx={{ color: "teal", color: "black" }}>
               Posted date: 18 August 2023
             </Typography>
           </Box>
@@ -79,10 +97,13 @@ const News = () => {
                 style={{ objectFit: "cover", width: "100%", height: "200px" }}
               />
               <Box sx={{ p: 2 }}>
-                <Typography variant="h6" sx={{ fontWeight: "bold", mb: 2 }}>
+                <Typography
+                  variant="h6"
+                  sx={{ fontWeight: "bold", mb: 2, color: "black" }}
+                >
                   {article.title}
                 </Typography>
-                <Typography variant="body2" sx={{ color: "text.secondary", mb: 2 }}>
+                <Typography variant="body2" sx={{ mb: 2, color: "black" }}>
                   {article.description}
                 </Typography>
                 <Typography variant="body2" sx={{ color: "teal" }}>

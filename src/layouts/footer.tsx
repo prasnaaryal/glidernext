@@ -18,13 +18,14 @@ const Footer = () => {
         >
           {/* Company Info */}
           <Box sx={{ mb: { xs: 4, md: 0 }, textAlign: { xs: "center", md: "left" } }}>
+            
+
+            
+            <Box sx={{ mt: 2 ,display: "flex",alignItems: "center", justifyContent:"center"}}>
             <Typography variant="h6" sx={{ color: "#00695f", fontWeight: "bold", mb: 1 }}>
               Glider Healthcare Pvt. Ltd.
             </Typography>
-
-            
-            <Box sx={{ mt: 2 }}>
-              <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
+              <Box sx={{ display: "flex", mb: 1 }}>
                 <FaMapMarkerAlt style={{ color: "#4caf50", marginRight: "8px" }} />
                 <Typography variant="body2" sx={{ color: "gray" }}>
                   New-baneshwor, Kathmandu, Nepal

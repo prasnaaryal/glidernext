@@ -17,10 +17,10 @@ const Faq = () => {
           variant="h5"
           sx={{ fontWeight: "bold", mb: 2, color: "black" }}
         >
-          OUR SEMINARS
+          Frequently asked questions
         </Typography>
         <Typography variant="h6" sx={{ color: "black" }}>
-          A Glimpse into our Seminar Experience
+        Your Quick Guide to Common Questions
         </Typography>
       </Box>
 

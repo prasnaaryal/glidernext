@@ -8,10 +8,10 @@ const ContactUs = () => {
       <Grid container spacing={6} alignItems="flex-start">
         {/* Contact Form */}
         <Grid item xs={12} md={4}>
-          <Typography variant="h4" sx={{ fontWeight: "bold", mb: 4 }}>
+          <Typography variant="h4" sx={{ fontWeight: "bold", mb: 2, color:"black" }}>
             CONTACT US
           </Typography>
-          <Typography variant="body1" sx={{ fontSize: "1.25rem", mb: 6 }}>
+          <Typography variant="body1" sx={{ fontSize: "1rem", mb: 4 , color:"black" }}>
             Ask Us Anything - We’d Love to Hear from You!
           </Typography>
 
