@@ -5,12 +5,28 @@ import { Box, Typography, Grid } from "@mui/material";
 import Image from "next/image";
 
 const Services = () => {
+  const services = [
+    { name: "Green Card Sponsorship" },
+    { name: "CGFNS Filing" },
+    { name: "Integrated E-Learning Platform" },
+    { name: "Consulting and Advisory Services" },
+    { name: "Mock Exams and Practice Assessments" },
+  ];
+
+  const moreservices = [
+    { name: "NCLEX_RN Preparation" },
+    { name: "Study Resources" },
+    { name: "Licensing Guidance" },
+    { name: "Continued Support" },
+  ];
+
   return (
     <Box
       sx={{
         maxWidth: "1200px",
         mx: "auto",
         py: 10,
+        px: 2,
         display: "grid",
         gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
         gap: 8,
@@ -40,53 +56,44 @@ const Services = () => {
         </Typography>
 
         {/* Services List */}
-        <Box
-          sx={{
-            py: 4,
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: 4,
-          }}
-        >
-          <Box>
-            {[
-              "Green Card Sponsorship",
-              "NCLEX_RN Preparation",
-              "Study Resources",
-              "Licensing Guidance",
-              "Continued Support",
-            ].map((service) => (
+        <Grid container spacing={2} sx={{ py: 4 }}>
+          <Grid item xs={12} sm={6}>
+            {moreservices.map((moreservice, index) => (
               <Typography
-                key={service}
-                sx={{ display: "flex", alignItems: "center", mb: 2 ,color:"black"}}
+                key={index}
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  mb: 2,
+                  color: "black",
+                }}
               >
                 <FcOk style={{ marginRight: "8px" }} />
-                {service}
+                {moreservice.name}
               </Typography>
             ))}
-          </Box>
-
-          <Box>
-            {[
-              "CGFNS Filing",
-              "Integrated E-Learning Platform",
-              "Consulting and Advisory Services",
-              "Mock Exams and Practice Assessments",
-            ].map((service) => (
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            {services.map((service, index) => (
               <Typography
-                key={service}
-                sx={{ display: "flex", alignItems: "center", mb: 2,color:"black" }}
+                key={index}
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  mb: 2,
+                  color: "black",
+                }}
               >
                 <FcOk style={{ marginRight: "8px" }} />
-                {service}
+                {service.name}
               </Typography>
             ))}
-          </Box>
-        </Box>
+          </Grid>
+        </Grid>
       </Box>
 
       {/* Image Section */}
-      <Box sx={{ display: "flex", justifyContent: "center" }}>
+      <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
         <Image
           src={Nurse3}
           alt="nurse"
